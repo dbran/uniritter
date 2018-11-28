@@ -1,0 +1,983 @@
+
+B35572@E0657345 MINGW32 ~
+$ cd c:/Denise/Denise/Particular/Seguro
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git remote add Seguro https://github.com/dbran/meu.git
+fatal: remote Seguro already exists.
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git push Seguro
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream Seguro master
+
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git push --set-upstream Seguro master
+fatal: unable to access 'https://github.com/dbran/meu.git/': SSL certificate pro                                  blem: unable to get local issuer certificate
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git push --set-upstream Seguro master
+fatal: unable to access 'https://github.com/dbran/meu.git/': SSL certificate problem: unable to get loc           al issuer certificate
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git push --set-upstream Seguro master
+fatal: unable to access 'https://github.com/dbran/meu.git/': SSL certificate problem: unable to get loc           al issuer certificate
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git config --global http.proxy http://B35572:esporte@nswg.corp.banrisul.com.br:8080
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git push --set-upstream Seguro master
+fatal: unable to access 'https://github.com/dbran/meu.git/': SSL certificate problem: unable to get loc           al issuer certificate
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ export GIT_CURL_VERBOSE=1
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git push Seguro master
+* Couldn't find host github.com in the _netrc file; using defaults
+* timeout on name lookup is not supported
+*   Trying 10.0.90.116...
+* TCP_NODELAY set
+* Connected to nswg.corp.banrisul.com.br (10.0.90.116) port 8080 (#0)
+* allocate connect buffer!
+* Establish HTTP proxy tunnel to github.com:443
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.1 407 authenticationrequired
+< Via: 1.1 10.0.90.58 (McAfee Web Gateway 7.8.1.6.0.26087)
+< Date: Wed, 28 Nov 2018 14:50:40 GMT
+< Content-Type: text/html
+< Cache-Control: no-cache
+< Content-Length: 4613
+< Proxy-Connection: Keep-Alive
+< Proxy-Authenticate: NTLM
+< Proxy-Authenticate: Basic realm="McAfee Web Gateway"
+<
+* Ignore 4613 bytes of response-body
+* Establish HTTP proxy tunnel to github.com:443
+* Proxy auth using NTLM with user 'B35572'
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB4IIogAAAAAAAAAAAAAAAAAAAAAKADk4AAAADw==
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.1 407 authenticationrequired
+< Via: 1.1 10.0.90.58 (McAfee Web Gateway 7.8.1.6.0.26087)
+< Date: Wed, 28 Nov 2018 14:50:40 GMT
+< Content-Type: text/html
+< Cache-Control: no-cache
+< Content-Length: 0
+< Proxy-Connection: Keep-Alive
+< Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAAAAAAAAAAAAFgomgH6amoO0u5DkAAAAAAAAAAAAAAAAAAAAA
+<
+* Establish HTTP proxy tunnel to github.com:443
+* Proxy auth using NTLM with user 'B35572'
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAHQAAACAAIAAjAAAAAAAAABYAAAADAAMAFgAAAAQABAAZAAAAAAAAAAMAQAABYKIogoAOTgAAAAPAZQEEe5+s3K/ewRQD9KYbkIAMwA1ADUANwAyAEUAMAA2ADUANwAzADQANQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABo504hwvAuN4lA5eHdZm/7AQEAAAAAAADpvni7KYfUAY9HqnPnzb+LAAAAAAgAMAAwAAAAAAAAAAAAAAAAMAAAdsq52S3d0H+qZLrQ3V+KQ2Z4oAYHleQKcMnJKDs0BOYKABAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.0 200 Connection established
+<
+* Proxy replied OK to CONNECT request
+* CONNECT phase completed!
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: C:/Users/B35572/Git/mingw32/ssl/certs/ca-bundle.crt
+  CApath: none
+* CONNECT phase completed!
+* CONNECT phase completed!
+* SSL certificate problem: unable to get local issuer certificate
+* stopped the pause stream!
+* Closing connection 0
+fatal: unable to access 'https://github.com/dbran/meu.git/': SSL certificate problem: unable to get local issuer certificate
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git push Seguro master
+* Couldn't find host github.com in the _netrc file; using defaults
+* timeout on name lookup is not supported
+*   Trying 10.0.90.116...
+* TCP_NODELAY set
+* Connected to nswg.corp.banrisul.com.br (10.0.90.116) port 8080 (#0)
+* allocate connect buffer!
+* Establish HTTP proxy tunnel to github.com:443
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.1 407 authenticationrequired
+< Via: 1.1 10.0.90.58 (McAfee Web Gateway 7.8.1.6.0.26087)
+< Date: Wed, 28 Nov 2018 14:54:28 GMT
+< Content-Type: text/html
+< Cache-Control: no-cache
+< Content-Length: 4613
+< Proxy-Connection: Keep-Alive
+< Proxy-Authenticate: NTLM
+< Proxy-Authenticate: Basic realm="McAfee Web Gateway"
+<
+* Ignore 4613 bytes of response-body
+* Establish HTTP proxy tunnel to github.com:443
+* Proxy auth using NTLM with user 'B35572'
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB4IIogAAAAAAAAAAAAAAAAAAAAAKADk4AAAADw==
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.1 407 authenticationrequired
+< Via: 1.1 10.0.90.58 (McAfee Web Gateway 7.8.1.6.0.26087)
+< Date: Wed, 28 Nov 2018 14:54:28 GMT
+< Content-Type: text/html
+< Cache-Control: no-cache
+< Content-Length: 0
+< Proxy-Connection: Keep-Alive
+< Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAAAAAAAAAAAAFgomgXxonEjioVpQAAAAAAAAAAAAAAAAAAAAA
+<
+* Establish HTTP proxy tunnel to github.com:443
+* Proxy auth using NTLM with user 'B35572'
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAHQAAACAAIAAjAAAAAAAAABYAAAADAAMAFgAAAAQABAAZAAAAAAAAAAMAQAABYKIogoAOTgAAAAPdKrM8aqz3HR+EXutGbzpKkIAMwA1ADUANwAyAEUAMAA2ADUANwAzADQANQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADGXnrDfm3TGN2L33YPs7q2AQEAAAAAAAA0Y0NDKofUATmSzA1L1kRgAAAAAAgAMAAwAAAAAAAAAAAAAAAAMAAAdsq52S3d0H+qZLrQ3V+KQ2Z4oAYHleQKcMnJKDs0BOYKABAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.0 200 Connection established
+<
+* Proxy replied OK to CONNECT request
+* CONNECT phase completed!
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: C:/Users/B35572/Git/mingw32/ssl/certs/ca-bundle.crt
+  CApath: none
+* CONNECT phase completed!
+* CONNECT phase completed!
+* SSL certificate problem: unable to get local issuer certificate
+* stopped the pause stream!
+* Closing connection 0
+fatal: unable to access 'https://github.com/dbran/meu.git/': SSL certificate problem: unable to get local issuer certificate
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git config --global http.sslVerify false
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git push Seguro master
+* Couldn't find host github.com in the _netrc file; using defaults
+* timeout on name lookup is not supported
+*   Trying 10.0.90.116...
+* TCP_NODELAY set
+* Connected to nswg.corp.banrisul.com.br (10.0.90.116) port 8080 (#0)
+* allocate connect buffer!
+* Establish HTTP proxy tunnel to github.com:443
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.1 407 authenticationrequired
+< Via: 1.1 10.0.90.58 (McAfee Web Gateway 7.8.1.6.0.26087)
+< Date: Wed, 28 Nov 2018 14:56:08 GMT
+< Content-Type: text/html
+< Cache-Control: no-cache
+< Content-Length: 4613
+< Proxy-Connection: Keep-Alive
+< Proxy-Authenticate: NTLM
+< Proxy-Authenticate: Basic realm="McAfee Web Gateway"
+<
+* Ignore 4613 bytes of response-body
+* Establish HTTP proxy tunnel to github.com:443
+* Proxy auth using NTLM with user 'B35572'
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB4IIogAAAAAAAAAAAAAAAAAAAAAKADk4AAAADw==
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.1 407 authenticationrequired
+< Via: 1.1 10.0.90.58 (McAfee Web Gateway 7.8.1.6.0.26087)
+< Date: Wed, 28 Nov 2018 14:56:08 GMT
+< Content-Type: text/html
+< Cache-Control: no-cache
+< Content-Length: 0
+< Proxy-Connection: Keep-Alive
+< Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAAAAAAAAAAAAFgomgBbI7QW32hy0AAAAAAAAAAAAAAAAAAAAA
+<
+* Establish HTTP proxy tunnel to github.com:443
+* Proxy auth using NTLM with user 'B35572'
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAHQAAACAAIAAjAAAAAAAAABYAAAADAAMAFgAAAAQABAAZAAAAAAAAAAMAQAABYKIogoAOTgAAAAPEN8/GJGbdQxX84CrqvaLWUIAMwA1ADUANwAyAEUAMAA2ADUANwAzADQANQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABORx/skj5hqaIWKKmO9DdzAQEAAAAAAACxvLp+KofUAUq1IiPqvshtAAAAAAgAMAAwAAAAAAAAAAAAAAAAMAAAdsq52S3d0H+qZLrQ3V+KQ2Z4oAYHleQKcMnJKDs0BOYKABAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.0 200 Connection established
+<
+* Proxy replied OK to CONNECT request
+* CONNECT phase completed!
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: C:/Users/B35572/Git/mingw32/ssl/certs/ca-bundle.crt
+  CApath: none
+* CONNECT phase completed!
+* CONNECT phase completed!
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: businessCategory=Private Organization; jurisdictionC=US; jurisdictionST=Delaware; serialNumber=5157550; C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=github.com
+*  start date: Nov 25 13:57:41 2018 GMT
+*  expire date: Nov 25 13:57:41 2019 GMT
+*  issuer: C=BR; ST=RS; L=Porto Alegre; O=Banrisul S.A.; CN=AC Banrisul Web Gateway Intermediaria v2
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+> GET /dbran/meu.git/info/refs?service=git-receive-pack HTTP/1.1
+Host: github.com
+User-Agent: git/2.14.1.windows.1
+Accept: */*
+Accept-Encoding: gzip
+Pragma: no-cache
+
+< HTTP/1.1 401 Authorization Required
+< via: Proxy
+< Server: GitHub Babel 2.0
+< Connection: Keep-Alive
+< Content-Type: text/plain
+< Content-Length: 21
+< X-Frame-Options: DENY
+< WWW-Authenticate: Basic realm="GitHub"
+< X-GitHub-Request-Id: BF7F:02D2:30F89BB:5CD9706:5BFEAC88
+<
+* Connection #0 to host nswg.corp.banrisul.com.br left intact
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': dbran
+* Couldn't find host github.com in the _netrc file; using defaults
+* Found bundle for host github.com: 0x3163428 [can pipeline]
+* Re-using existing connection! (#0) with proxy nswg.corp.banrisul.com.br
+* Connected to nswg.corp.banrisul.com.br (10.0.90.116) port 8080 (#0)
+* Server auth using Basic with user 'dbran'
+> GET /dbran/meu.git/info/refs?service=git-receive-pack HTTP/1.1
+Host: github.com
+Authorization: Basic ZGJyYW46ZXNwb3J0ZQ==
+User-Agent: git/2.14.1.windows.1
+Accept: */*
+Accept-Encoding: gzip
+Pragma: no-cache
+
+< HTTP/1.1 401 Authorization Required
+< via: Proxy
+< Server: GitHub Babel 2.0
+< Connection: Keep-Alive
+< Content-Type: text/plain
+< Content-Length: 29
+< X-Frame-Options: DENY
+* Authentication problem. Ignoring this.
+< WWW-Authenticate: Basic realm="GitHub"
+< X-GitHub-Request-Id: BF7F:02D2:30F94EE:5CD9713:5BFEAC89
+<
+* Connection #0 to host nswg.corp.banrisul.com.br left intact
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/dbran/meu.git/'
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git config --global http.sslVerify true
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git config --system http.sslCAPath /absolute/path/to/git/certificates
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git push Seguro master
+* Couldn't find host github.com in the _netrc file; using defaults
+* timeout on name lookup is not supported
+*   Trying 10.0.90.116...
+* TCP_NODELAY set
+* Connected to nswg.corp.banrisul.com.br (10.0.90.116) port 8080 (#0)
+* allocate connect buffer!
+* Establish HTTP proxy tunnel to github.com:443
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.1 407 authenticationrequired
+< Via: 1.1 10.0.90.58 (McAfee Web Gateway 7.8.1.6.0.26087)
+< Date: Wed, 28 Nov 2018 14:59:28 GMT
+< Content-Type: text/html
+< Cache-Control: no-cache
+< Content-Length: 4613
+< Proxy-Connection: Keep-Alive
+< Proxy-Authenticate: NTLM
+< Proxy-Authenticate: Basic realm="McAfee Web Gateway"
+<
+* Ignore 4613 bytes of response-body
+* Establish HTTP proxy tunnel to github.com:443
+* Proxy auth using NTLM with user 'B35572'
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB4IIogAAAAAAAAAAAAAAAAAAAAAKADk4AAAADw==
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.1 407 authenticationrequired
+< Via: 1.1 10.0.90.58 (McAfee Web Gateway 7.8.1.6.0.26087)
+< Date: Wed, 28 Nov 2018 14:59:28 GMT
+< Content-Type: text/html
+< Cache-Control: no-cache
+< Content-Length: 0
+< Proxy-Connection: Keep-Alive
+< Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAAAAAAAAAAAAFgomgOQn530O6RU8AAAAAAAAAAAAAAAAAAAAA
+<
+* Establish HTTP proxy tunnel to github.com:443
+* Proxy auth using NTLM with user 'B35572'
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAHQAAACAAIAAjAAAAAAAAABYAAAADAAMAFgAAAAQABAAZAAAAAAAAAAMAQAABYKIogoAOTgAAAAPFZVsrYVkjgnVhVdY7T4ZXkIAMwA1ADUANwAyAEUAMAA2ADUANwAzADQANQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAk+cuvO4gdPhHB/E1IWZYaAQEAAAAAAABPldn1KofUAbc8+ohHRzkqAAAAAAgAMAAwAAAAAAAAAAAAAAAAMAAAdsq52S3d0H+qZLrQ3V+KQ2Z4oAYHleQKcMnJKDs0BOYKABAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.0 200 Connection established
+<
+* Proxy replied OK to CONNECT request
+* CONNECT phase completed!
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: C:/Users/B35572/Git/mingw32/ssl/certs/ca-bundle.crt
+  CApath: C:/Users/B35572/Git/absolute/path/to/git/certificates
+* CONNECT phase completed!
+* CONNECT phase completed!
+* SSL certificate problem: unable to get local issuer certificate
+* stopped the pause stream!
+* Closing connection 0
+fatal: unable to access 'https://github.com/dbran/meu.git/': SSL certificate problem: unable to get local issuer certificate
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git push Seguro master
+* Couldn't find host github.com in the _netrc file; using defaults
+* timeout on name lookup is not supported
+*   Trying 10.0.90.116...
+* TCP_NODELAY set
+* Connected to nswg.corp.banrisul.com.br (10.0.90.116) port 8080 (#0)
+* allocate connect buffer!
+* Establish HTTP proxy tunnel to github.com:443
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.1 407 authenticationrequired
+< Via: 1.1 10.0.90.58 (McAfee Web Gateway 7.8.1.6.0.26087)
+< Date: Wed, 28 Nov 2018 15:08:15 GMT
+< Content-Type: text/html
+< Cache-Control: no-cache
+< Content-Length: 4613
+< Proxy-Connection: Keep-Alive
+< Proxy-Authenticate: NTLM
+< Proxy-Authenticate: Basic realm="McAfee Web Gateway"
+<
+* Ignore 4613 bytes of response-body
+* Establish HTTP proxy tunnel to github.com:443
+* Proxy auth using NTLM with user 'B35572'
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB4IIogAAAAAAAAAAAAAAAAAAAAAKADk4AAAADw==
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.1 407 authenticationrequired
+< Via: 1.1 10.0.90.58 (McAfee Web Gateway 7.8.1.6.0.26087)
+< Date: Wed, 28 Nov 2018 15:08:15 GMT
+< Content-Type: text/html
+< Cache-Control: no-cache
+< Content-Length: 0
+< Proxy-Connection: Keep-Alive
+< Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAAAAAAAAAAAAFgomgzn97cUsfp4oAAAAAAAAAAAAAAAAAAAAA
+<
+* Establish HTTP proxy tunnel to github.com:443
+* Proxy auth using NTLM with user 'B35572'
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAHQAAACAAIAAjAAAAAAAAABYAAAADAAMAFgAAAAQABAAZAAAAAAAAAAMAQAABYKIogoAOTgAAAAP0uWyEZk4BjBrjDekQ6lGTUIAMwA1ADUANwAyAEUAMAA2ADUANwAzADQANQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGJ3yUlS91YZrzFbvB6EMaAQEAAAAAAADvlikwLIfUAdYSI47ZRoTMAAAAAAgAMAAwAAAAAAAAAAAAAAAAMAAAdsq52S3d0H+qZLrQ3V+KQ2Z4oAYHleQKcMnJKDs0BOYKABAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.0 200 Connection established
+<
+* Proxy replied OK to CONNECT request
+* CONNECT phase completed!
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: C:/Users/B35572/Git/mingw32/ssl/certs/ca-bundle.crt
+  CApath: C:/Users/B35572/Git/absolute/path/to/git/certificates
+* CONNECT phase completed!
+* CONNECT phase completed!
+* SSL certificate problem: unable to get local issuer certificate
+* stopped the pause stream!
+* Closing connection 0
+fatal: unable to access 'https://github.com/dbran/uniritter.git/': SSL certificate problem: unable to get local issuer certificate
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git config --system http.sslCAPath /absolute/path/to/git/certificates
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git config --global http.sslVerify false
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git push Seguro master
+* Couldn't find host github.com in the _netrc file; using defaults
+* timeout on name lookup is not supported
+*   Trying 10.0.90.116...
+* TCP_NODELAY set
+* Connected to nswg.corp.banrisul.com.br (10.0.90.116) port 8080 (#0)
+* allocate connect buffer!
+* Establish HTTP proxy tunnel to github.com:443
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.1 407 authenticationrequired
+< Via: 1.1 10.0.90.58 (McAfee Web Gateway 7.8.1.6.0.26087)
+< Date: Wed, 28 Nov 2018 15:08:36 GMT
+< Content-Type: text/html
+< Cache-Control: no-cache
+< Content-Length: 4613
+< Proxy-Connection: Keep-Alive
+< Proxy-Authenticate: NTLM
+< Proxy-Authenticate: Basic realm="McAfee Web Gateway"
+<
+* Ignore 4613 bytes of response-body
+* Establish HTTP proxy tunnel to github.com:443
+* Proxy auth using NTLM with user 'B35572'
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB4IIogAAAAAAAAAAAAAAAAAAAAAKADk4AAAADw==
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.1 407 authenticationrequired
+< Via: 1.1 10.0.90.58 (McAfee Web Gateway 7.8.1.6.0.26087)
+< Date: Wed, 28 Nov 2018 15:08:36 GMT
+< Content-Type: text/html
+< Cache-Control: no-cache
+< Content-Length: 0
+< Proxy-Connection: Keep-Alive
+< Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAAAAAAAAAAAAFgomgPHFpnvsmZQAAAAAAAAAAAAAAAAAAAAAA
+<
+* Establish HTTP proxy tunnel to github.com:443
+* Proxy auth using NTLM with user 'B35572'
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAHQAAACAAIAAjAAAAAAAAABYAAAADAAMAFgAAAAQABAAZAAAAAAAAAAMAQAABYKIogoAOTgAAAAPA/jTdJpojQgW1x5L23x3/kIAMwA1ADUANwAyAEUAMAA2ADUANwAzADQANQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACa1pl87GOhFIhJoyfKNQf4AQEAAAAAAABTWJQ8LIfUAQ0NY4SD+0m5AAAAAAgAMAAwAAAAAAAAAAAAAAAAMAAAdsq52S3d0H+qZLrQ3V+KQ2Z4oAYHleQKcMnJKDs0BOYKABAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.0 200 Connection established
+<
+* Proxy replied OK to CONNECT request
+* CONNECT phase completed!
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: C:/Users/B35572/Git/mingw32/ssl/certs/ca-bundle.crt
+  CApath: C:/Users/B35572/Git/absolute/path/to/git/certificates
+* CONNECT phase completed!
+* CONNECT phase completed!
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: businessCategory=Private Organization; jurisdictionC=US; jurisdictionST=Delaware; serialNumber=5157550; C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=github.com
+*  start date: Nov 25 13:57:41 2018 GMT
+*  expire date: Nov 25 13:57:41 2019 GMT
+*  issuer: C=BR; ST=RS; L=Porto Alegre; O=Banrisul S.A.; CN=AC Banrisul Web Gateway Intermediaria v2
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+> GET /dbran/uniritter.git/info/refs?service=git-receive-pack HTTP/1.1
+Host: github.com
+User-Agent: git/2.14.1.windows.1
+Accept: */*
+Accept-Encoding: gzip
+Pragma: no-cache
+
+< HTTP/1.1 401 Authorization Required
+< via: Proxy
+< Server: GitHub Babel 2.0
+< Connection: Keep-Alive
+< Content-Type: text/plain
+< Content-Length: 47
+< X-Frame-Options: DENY
+< WWW-Authenticate: Basic realm="GitHub"
+< X-GitHub-Request-Id: DF46:02D1:3A0C394:6DD64F1:5BFEAF74
+<
+* Connection #0 to host nswg.corp.banrisul.com.br left intact
+* Couldn't find host github.com in the _netrc file; using defaults
+* Found bundle for host github.com: 0x3203208 [can pipeline]
+* Re-using existing connection! (#0) with proxy nswg.corp.banrisul.com.br
+* Connected to nswg.corp.banrisul.com.br (10.0.90.116) port 8080 (#0)
+* Server auth using Basic with user 'Personal Access Token'
+> GET /dbran/uniritter.git/info/refs?service=git-receive-pack HTTP/1.1
+Host: github.com
+Authorization: Basic UGVyc29uYWwgQWNjZXNzIFRva2VuOmY1NTkxOGQxMTU0YTkxNjAyNmQ0ODJhMDcxNzZmYjk1ZGFjMjQ3MGY=
+User-Agent: git/2.14.1.windows.1
+Accept: */*
+Accept-Encoding: gzip
+Pragma: no-cache
+
+< HTTP/1.1 200 OK
+< via: Proxy
+< Vary: Accept-Encoding
+< Pragma: no-cache
+< Server: GitHub Babel 2.0
+< Expires: Fri, 01 Jan 1980 00:00:00 GMT
+< Connection: Keep-Alive
+< Content-Type: application/x-git-receive-pack-advertisement
+< Cache-Control: no-cache, max-age=0, must-revalidate
+< X-Frame-Options: DENY
+< Transfer-Encoding: chunked
+< X-GitHub-Request-Id: DF46:02D1:3A0C665:6DD6508:5BFEAF75
+<
+* Connection #0 to host nswg.corp.banrisul.com.br left intact
+Counting objects: 205, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (203/203), done.
+* Couldn't find host github.com in the _netrc file; using defaults
+* Found bundle for host github.com: 0x3203208 [can pipeline]
+* Re-using existing connection! (#0) with proxy nswg.corp.banrisul.com.br
+* Connected to nswg.corp.banrisul.com.br (10.0.90.116) port 8080 (#0)
+* Server auth using Basic with user 'Personal Access Token'
+> POST /dbran/uniritter.git/git-receive-pack HTTP/1.1
+Host: github.com
+Authorization: Basic UGVyc29uYWwgQWNjZXNzIFRva2VuOmY1NTkxOGQxMTU0YTkxNjAyNmQ0ODJhMDcxNzZmYjk1ZGFjMjQ3MGY=
+User-Agent: git/2.14.1.windows.1
+Content-Type: application/x-git-receive-pack-request
+Accept: application/x-git-receive-pack-result
+Content-Length: 4
+
+* upload completely sent off: 4 out of 4 bytes
+< HTTP/1.1 200 OK
+< via: Proxy
+< Vary: Accept-Encoding
+< Pragma: no-cache
+< Server: GitHub Babel 2.0
+< Expires: Fri, 01 Jan 1980 00:00:00 GMT
+< Connection: Keep-Alive
+< Content-Type: application/x-git-receive-pack-result
+< Cache-Control: no-cache, max-age=0, must-revalidate
+< X-Frame-Options: DENY
+< Transfer-Encoding: chunked
+< X-GitHub-Request-Id: DF46:02D1:3A0D090:6DD6A35:5BFEAF83
+<
+* Connection #0 to host nswg.corp.banrisul.com.br left intact
+* Couldn't find host github.com in the _netrc file; using defaults
+* Found bundle for host github.com: 0x3203208 [can pipeline]
+* Re-using existing connection! (#0) with proxy nswg.corp.banrisul.com.br
+* Connected to nswg.corp.banrisul.com.br (10.0.90.116) port 8080 (#0)
+* Server auth using Basic with user 'Personal Access Token'
+> POST /dbran/uniritter.git/git-receive-pack HTTP/1.1
+Host: github.com
+Authorization: Basic UGVyc29uYWwgQWNjZXNzIFRva2VuOmY1NTkxOGQxMTU0YTkxNjAyNmQ0ODJhMDcxNzZmYjk1ZGFjMjQ3MGY=
+User-Agent: git/2.14.1.windows.1
+Accept-Encoding: gzip
+Content-Type: application/x-git-receive-pack-request
+Accept: application/x-git-receive-pack-result
+Transfer-Encoding: chunked
+
+Writing objects: 100% (205/205), 23.88 MiB | 3.79 MiB/s, done.
+Total 205 (delta 97), reused 0 (delta 0)
+git init
+* The requested URL returned error: 502 badgateway
+* stopped the pause stream!
+* Closing connection 0
+error: RPC failed; HTTP 502 curl 22 The requested URL returned error: 502 badgateway
+fatal: The remote end hung up unexpectedly
+fatal: The remote end hung up unexpectedly
+Everything up-to-date
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git init
+Initialized empty Git repository in C:/Denise/Denise/Particular/Seguro/.git/
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git init
+Reinitialized existing Git repository in C:/Denise/Denise/Particular/Seguro/.git/
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git commit -m "primeiro"
+On branch master
+
+Initial commit
+
+Untracked files:
+        .gitignore
+        seguroAuto2018.txt
+
+nothing added to commit but untracked files present
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git remote add origin https://github.com/dbran/uniritter.git
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/dbran/uniritter.git'
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git remote add origin https://github.com/dbran/uniritter.git
+fatal: remote origin already exists.
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/dbran/uniritter.git'
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ ^C
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git init
+Reinitialized existing Git repository in C:/Denise/Denise/Particular/Seguro/.git/
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+        .gitignore
+        seguroAuto2018.txt
+
+nothing added to commit but untracked files present
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+        .gitignore
+        seguroAuto2018.txt
+
+nothing added to commit but untracked files present
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ dir
+seguroAuto2018.txt
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ Initial commit
+bash: Initial: command not found
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+        .gitignore
+        seguroAuto2018.txt
+
+nothing added to commit but untracked files present
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+        seguroAuto2018.txt
+
+nothing added to commit but untracked files present
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git add seguroAuto2018.txt
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git commit -m "first commit"
+[master (root-commit) 7949d5e] first commit
+ Committer: Denise Munchen Brandao <B35572@banrisul.com.br>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 14 insertions(+)
+ create mode 100644 seguroAuto2018.txt
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git config --global user.name "denise"
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git commit --amend --reset-author
+[master 46b4afc] first commit
+ Committer: denise <B35572@banrisul.com.br>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 14 insertions(+)
+ create mode 100644 seguroAuto2018.txt
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git commit -m "first commit"
+On branch master
+nothing to commit, working tree clean
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git remote add origin https://github.com/dbran/uniritter.git
+fatal: remote origin already exists.
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git remote add Seguro https://github.com/dbran/uniritter.git
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ git push -u Seguro master
+* Couldn't find host github.com in the _netrc file; using defaults
+* timeout on name lookup is not supported
+*   Trying 10.0.90.116...
+* TCP_NODELAY set
+* Connected to nswg.corp.banrisul.com.br (10.0.90.116) port 8080 (#0)
+* allocate connect buffer!
+* Establish HTTP proxy tunnel to github.com:443
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.1 407 authenticationrequired
+< Via: 1.1 10.0.90.58 (McAfee Web Gateway 7.8.1.6.0.26087)
+< Date: Wed, 28 Nov 2018 16:29:57 GMT
+< Content-Type: text/html
+< Cache-Control: no-cache
+< Content-Length: 4613
+< Proxy-Connection: Keep-Alive
+< Proxy-Authenticate: NTLM
+< Proxy-Authenticate: Basic realm="McAfee Web Gateway"
+<
+* Ignore 4613 bytes of response-body
+* Establish HTTP proxy tunnel to github.com:443
+* Proxy auth using NTLM with user 'B35572'
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+Proxy-Authorization: NTLM TlRMTVNTUAABAAAAB4IIogAAAAAAAAAAAAAAAAAAAAAKADk4AAAADw==
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.1 407 authenticationrequired
+< Via: 1.1 10.0.90.58 (McAfee Web Gateway 7.8.1.6.0.26087)
+< Date: Wed, 28 Nov 2018 16:29:57 GMT
+< Content-Type: text/html
+< Cache-Control: no-cache
+< Content-Length: 0
+< Proxy-Connection: Keep-Alive
+< Proxy-Authenticate: NTLM TlRMTVNTUAACAAAAAAAAAAAAAAAFgomgTgbCr4ccYcMAAAAAAAAAAAAAAAAAAAAA
+<
+* Establish HTTP proxy tunnel to github.com:443
+* Proxy auth using NTLM with user 'B35572'
+> CONNECT github.com:443 HTTP/1.1
+Host: github.com:443
+Proxy-Authorization: NTLM TlRMTVNTUAADAAAAGAAYAHQAAACAAIAAjAAAAAAAAABYAAAADAAMAFgAAAAQABAAZAAAAAAAAAAMAQAABYKIogoAOTgAAAAPEB9CkwHyQSPZFXuFw3MooEIAMwA1ADUANwAyAEUAMAA2ADUANwAzADQANQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGUuECc2HimkBEOlSlvEnPAQEAAAAAAAAdBh2aN4fUAWwuFkHjsID7AAAAAAgAMAAwAAAAAAAAAAAAAAAAMAAAdsq52S3d0H+qZLrQ3V+KQ2Z4oAYHleQKcMnJKDs0BOYKABAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==
+User-Agent: git/2.14.1.windows.1
+Proxy-Connection: Keep-Alive
+
+< HTTP/1.0 200 Connection established
+<
+* Proxy replied OK to CONNECT request
+* CONNECT phase completed!
+* ALPN, offering http/1.1
+* Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH
+* successfully set certificate verify locations:
+*   CAfile: C:/Users/B35572/Git/mingw32/ssl/certs/ca-bundle.crt
+  CApath: C:/Users/B35572/Git/absolute/path/to/git/certificates
+* CONNECT phase completed!
+* CONNECT phase completed!
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: businessCategory=Private Organization; jurisdictionC=US; jurisdictionST=Delaware; serialNumber=5157550; C=US; ST=California; L=San Francisco; O=GitHub, Inc.; CN=github.com
+*  start date: Nov 25 13:57:41 2018 GMT
+*  expire date: Nov 25 13:57:41 2019 GMT
+*  issuer: C=BR; ST=RS; L=Porto Alegre; O=Banrisul S.A.; CN=AC Banrisul Web Gateway Intermediaria v2
+*  SSL certificate verify result: unable to get local issuer certificate (20), continuing anyway.
+> GET /dbran/uniritter.git/info/refs?service=git-receive-pack HTTP/1.1
+Host: github.com
+User-Agent: git/2.14.1.windows.1
+Accept: */*
+Accept-Encoding: gzip
+Pragma: no-cache
+
+< HTTP/1.1 401 Authorization Required
+< via: Proxy
+< Server: GitHub Babel 2.0
+< Connection: Keep-Alive
+< Content-Type: text/plain
+< Content-Length: 47
+< X-Frame-Options: DENY
+< WWW-Authenticate: Basic realm="GitHub"
+< X-GitHub-Request-Id: 06BC:02D1:3A6350A:6E7B3D5:5BFEC286
+<
+* Connection #0 to host nswg.corp.banrisul.com.br left intact
+* Couldn't find host github.com in the _netrc file; using defaults
+* Found bundle for host github.com: 0x3433248 [can pipeline]
+* Re-using existing connection! (#0) with proxy nswg.corp.banrisul.com.br
+* Connected to nswg.corp.banrisul.com.br (10.0.90.116) port 8080 (#0)
+* Server auth using Basic with user 'Personal Access Token'
+> GET /dbran/uniritter.git/info/refs?service=git-receive-pack HTTP/1.1
+Host: github.com
+Authorization: Basic UGVyc29uYWwgQWNjZXNzIFRva2VuOmY1NTkxOGQxMTU0YTkxNjAyNmQ0ODJhMDcxNzZmYjk1ZGFjMjQ3MGY=
+User-Agent: git/2.14.1.windows.1
+Accept: */*
+Accept-Encoding: gzip
+Pragma: no-cache
+
+< HTTP/1.1 200 OK
+< via: Proxy
+< Vary: Accept-Encoding
+< Pragma: no-cache
+< Server: GitHub Babel 2.0
+< Expires: Fri, 01 Jan 1980 00:00:00 GMT
+< Connection: Keep-Alive
+< Content-Type: application/x-git-receive-pack-advertisement
+< Cache-Control: no-cache, max-age=0, must-revalidate
+< X-Frame-Options: DENY
+< Transfer-Encoding: chunked
+< X-GitHub-Request-Id: 06BC:02D1:3A635A0:6E7B3EC:5BFEC286
+<
+* Connection #0 to host nswg.corp.banrisul.com.br left intact
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 398 bytes | 398.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+* Couldn't find host github.com in the _netrc file; using defaults
+* Found bundle for host github.com: 0x3433248 [can pipeline]
+* Re-using existing connection! (#0) with proxy nswg.corp.banrisul.com.br
+* Connected to nswg.corp.banrisul.com.br (10.0.90.116) port 8080 (#0)
+* Server auth using Basic with user 'Personal Access Token'
+> POST /dbran/uniritter.git/git-receive-pack HTTP/1.1
+Host: github.com
+Authorization: Basic UGVyc29uYWwgQWNjZXNzIFRva2VuOmY1NTkxOGQxMTU0YTkxNjAyNmQ0ODJhMDcxNzZmYjk1ZGFjMjQ3MGY=
+User-Agent: git/2.14.1.windows.1
+Accept-Encoding: gzip
+Content-Type: application/x-git-receive-pack-request
+Accept: application/x-git-receive-pack-result
+Content-Length: 561
+
+* upload completely sent off: 561 out of 561 bytes
+< HTTP/1.1 200 OK
+< via: Proxy
+< Vary: Accept-Encoding
+< Pragma: no-cache
+< Server: GitHub Babel 2.0
+< Expires: Fri, 01 Jan 1980 00:00:00 GMT
+< Connection: Keep-Alive
+< Content-Type: application/x-git-receive-pack-result
+< Cache-Control: no-cache, max-age=0, must-revalidate
+< X-Frame-Options: DENY
+< Transfer-Encoding: chunked
+< X-GitHub-Request-Id: 06BC:02D1:3A6365B:6E7B52D:5BFEC289
+<
+* Connection #0 to host nswg.corp.banrisul.com.br left intact
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/dbran/uniritter/pull/new/master
+remote:
+To https://github.com/dbran/uniritter.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from Seguro.
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ touch README.md
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ cd ..
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular (master)
+$ mkdir Meu
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular (master)
+$ cd Meu
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Meu (master)
+$ touch README.md
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Meu (master)
+$ git init
+Initialized empty Git repository in C:/Denise/Denise/Particular/Meu/.git/
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Meu (master)
+$ git add README.md
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Meu (master)
+$ git commit -m "primeiro comit no meu repositorio"
+[master (root-commit) 548a702] primeiro comit no meu repositorio
+ Committer: denise <B35572@banrisul.com.br>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Meu (master)
+$ git remote add origin git@github.com:dbran/meu.git
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Meu (master)
+$ git push -u origin master
+ssh: connect to host github.com port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Meu (master)
+$ cd ..
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular (master)
+$ cd Seguro
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ touch teste.txt
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$ edit teste.txt
+bash: edit: command not found
+
+B35572@E0657345 MINGW32 /c/Denise/Denise/Particular/Seguro (master)
+$
